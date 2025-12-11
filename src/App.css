@@ -292,3 +292,16 @@
 .gallery-image {
   cursor: pointer;
 }
+
+.donate-page {
+  text-align: center;
+}
+
+.donate-qr {
+  max-width: 260px;  /* reasonable size */
+  width: 100%;       /* responsive on small screens */
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
+}
