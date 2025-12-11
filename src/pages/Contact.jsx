@@ -5,13 +5,13 @@ export default function Contact() {
         <div>
             <h1>Contact Us</h1>
 
-            <h3>Join PRSA</h3>
+            <h2>Join PRSA</h2>
             <p>Fill out the following information to be added to the PRSA WhatsApp Groupchat</p>
             <ContactForm/>
-            {/* TODO: Complete API to submit request, add response upon submit stating it may take a few days to be added */}
 
-            <h3>Club Collaboration Inquiries</h3>
-            <p>Email us at: <a href="mailto:PLACEHOLDER@wisc.edu"><strong>{/*TODO: ADD EMAIL */}@wisc.edu</strong></a></p>
+            <h2>Club Collaboration Inquiries</h2>
+            <p>Are you part of a club, fraternity, or sorority and have an idea for a group event?</p>
+            <p>Email us at: <a href="mailto:roblesrobles@wisc.edu"><strong>roblesrobles@wisc.edu</strong></a></p>
         </div>
     )
 }

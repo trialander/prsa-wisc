@@ -6,7 +6,6 @@ export default function Footer() {
             <a href="https://www.instagram.com/prsawisc" target="_blank" rel="noopener noreferrer">
             <img src={instagramIcon} alt="Instagram Icon linking to PRSA Instagram Page" style={{width : "2.5em", height : "2.5em"}}/>
             </a>
-            {/*TODO: Ask Favi about other socials to include if they exist*/}
             <p className="text-muted mt-2">{new Date().getFullYear()} Puerto Rican Student Association at UW–Madison</p>
         </footer>
     );

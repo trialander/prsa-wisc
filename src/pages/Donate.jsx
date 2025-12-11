@@ -5,7 +5,7 @@ export default function Donate(){
         <div>
             <h1>Scan to Donate</h1>
             <p>Donations of any amount help us fund special events for the club!</p>
-            {/* TODO: Insert Favi's Venmo QR Code & explain more what funds will go to/add images */}
+            
         </div>
     );
 

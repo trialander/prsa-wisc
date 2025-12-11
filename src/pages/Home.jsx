@@ -1,26 +1,90 @@
+import { Row, Col, Card, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import logo from "../assets/prsalogo.png";
+import ImageGallery from "../components/ImageGallery.jsx";
 
+const SECTIONS = [
+  {
+    title: "About",
+    text: "Learn about the club and meet the board members.",
+    path: "/about",
+  },
+  {
+    title: "Events",
+    text: "View upcoming and past events, and suggest future ones.",
+    path: "/events",
+  },
+  {
+    title: "Contact",
+    text: "Reach out to join PRSA or collaborate with us.",
+    path: "/contact",
+  },
+  {
+    title: "Donate",
+    text: "Support our cultural programming and community events.",
+    path: "/donate",
+  },
+];
 
-export default function Home(){
+export default function Home() {
+  return (
+    <div className="home-page">
+      <section className="home-hero">
+        <Row className="align-items-center g-4">
+          <Col md={5}>
+            <div className="home-hero-logo-wrap">
+              <img
+                src={logo}
+                alt="Puerto Rican Student Association logo"
+                className="img-fluid home-hero-logo"
+              />
+            </div>
+          </Col>
+          <Col md={7}>
+            <h1 className="home-hero-title">
+              Celebrate Puerto Rican culture at UW–Madison.
+            </h1>
+            <p className="home-hero-subtitle">
+              PRSA is a community for Puerto Rican students and allies to connect,
+              share culture, and support one another on campus.
+            </p>
+          </Col>
+        </Row>
+      </section>
+      <section className="mt-5" aria-labelledby="site-overview-heading">
+        <h2 id="site-overview-heading" className="mb-3">
+            Explore the site
+        </h2>
+        <Row className="g-4">
+        {SECTIONS.map((section, idx) => {
+        const isBlue = idx % 2 === 0;
+        const cardClass = isBlue
+            ? "home-section-card home-section-card--blue card-lift"
+            : "home-section-card home-section-card--red card-lift";
+        const btnVariant = isBlue ? "primary" : "danger";
 
-    {/* TODO: Style this accordingly & Add Images*/}
-    return (
-        <div>
-            <div>
-                <h1>Welcome to the Puerto Rican Student Association Website!</h1>
-                <h2>A quick guide to the exploring the site:</h2>
-            </div>
-            <div>
-                <h3>About</h3><p>Learn about the club and its members!</p>
-            </div>
-            <div>
-                <h3>Events</h3><p>View upcoming and previous events, suggest future events!</p>
-            </div>
-            <div>
-                <h3>Contact</h3><p>Reach out to join or collaborate with the club!</p>
-            </div>
-            <div>
-                <h3>Donate</h3><p>Donate to support the club!</p>
-            </div>
-        </div>
-    );
+        return (
+            <Col key={section.title} xs={12} md={6} lg={3}>
+            <Card className={cardClass}>
+                <Card.Body>
+                <Card.Title>{section.title}</Card.Title>
+                <Card.Text>{section.text}</Card.Text>
+                <Button
+                as={Link}
+                to={section.path}
+                size="sm"
+                variant={btnVariant}
+                >
+                Go to {section.title}
+                </Button>
+                </Card.Body>
+            </Card>
+            </Col>
+        );
+        })}
+    </Row>
+    </section>
+    <ImageGallery />
+    </div>
+  );
 }

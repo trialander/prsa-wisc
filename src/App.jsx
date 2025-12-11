@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Container } from "react-bootstrap";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import MyNavbar from "./components/MyNavbar.jsx";
@@ -13,18 +13,22 @@ import Donate from "./pages/Donate.jsx";
 
 function App() {
   return (
-    <Router basename="/p97">
-      <Banner/>
-      <MyNavbar />
-      <div className="mt-4 mb-5 px-3">
-        <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/about" element={<About/>} />
-          <Route path="/events" element={<Events/>} />
-          <Route path="/contact" element={<Contact/>} />
-          <Route path="/donate" element={<Donate/>} />
-        </Routes>
-      </div>
+    <Router basename="/p97/">
+      <header>
+        <Banner/>
+        <MyNavbar />
+      </header>
+      <main>
+        <Container className="mt-4 mb-5 px-3">
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/about" element={<About/>} />
+            <Route path="/events" element={<Events/>} />
+            <Route path="/contact" element={<Contact/>} />
+            <Route path="/donate" element={<Donate/>} />
+          </Routes>
+        </Container>
+      </main>
       <Footer/>
     </Router>
   );
