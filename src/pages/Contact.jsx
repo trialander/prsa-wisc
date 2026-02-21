@@ -11,7 +11,7 @@ export default function Contact() {
 
             <h2>Club Collaboration Inquiries</h2>
             <p>Are you part of a club, fraternity, or sorority and have an idea for a group event?</p>
-            <p>Email us at: <a href="mailto:roblesrobles@wisc.edu"><strong>roblesrobles@wisc.edu</strong></a></p>
+            <p>Email us at: <a href="wiscoprsa@outlook.com"><strong>wiscoprsa@outlook.com</strong></a></p>
         </div>
     )
 }

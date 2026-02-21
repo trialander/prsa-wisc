@@ -11,6 +11,81 @@ const EVENTS_URL =
 
 const EVENTS_IMAGES_BASE = `${import.meta.env.BASE_URL}images/events/`;
 
+const EVENTS = [
+  {
+    "id": "1",
+    "name": "PRSA Launch Meeting",
+    "location": "Memorial Union, Profile Room 2nd Floor",
+    "start-time": "2025-03-10T19:30:00-06:00",
+    "end-time": "2025-03-10T20:30:00-06:00",
+    "description": "First PRSA meeting of the Spring 2025 semester, learn about the club and get to know other new members!"
+  },
+  {
+    "id": "2",
+    "name": "Baile Inolvidable KDCHI x PRSA",
+    "location": "MSC Lounge (Red Gym)",
+    "start-time": "2025-04-28T18:00:00-06:00",
+    "end-time": "2025-04-28T20:00:00-06:00",
+    "description": "Come learn some fun moves, meet new people, and dance the night away. No experience needed!"
+  },
+  {
+    "id": "3",
+    "name": "Fall 2025 Introduction Meeting",
+    "location": "Memorial Union Meeting Room",
+    "start-time": "2025-10-23T19:00:00-06:00",
+    "end-time": "2025-10-23T20:00:00-06:00",
+    "description": "Whether you're Puertorican, have love for the island, or just want to learn more about our culture, come through! We'll be sharing our plans for the year, playing some games, and connecting as a community."
+  },
+  {
+    "id": "4",
+    "name": "Open Salsa Social",
+    "location": "Memorial Union",
+    "start-time": "2025-11-06T18:30:00-06:00",
+    "end-time": "2025-11-06T20:00:00-06:00",
+    "description": "Join us to learn some moves and get to know PRSA!"
+  },
+  {
+    "id": "5",
+    "name": "Noche Puertorriqueña",
+    "location": "Memorial Union National Pan-Hellenic Council Room (2nd Floor)",
+    "start-time": "2025-11-21T18:30:00-06:00",
+    "end-time": "2025-11-21T20:30:00-06:00",
+    "description": "An evening celebrating Puerto Rican culture from the mountains to the coast."
+  },
+  {
+    "id": "6",
+    "name": "Christmas Bonfire",
+    "location": "Picnic Point Fire Circle #1",
+    "start-time": "2025-12-05T19:45:00-06:00",
+    "end-time": "2025-12-05T20:00:00-06:00",
+    "description": "Celebrate the beginning of winter with PRSA by sharing some hot chocolate and marshmallows!"
+  },
+  {
+    "id": "7",
+    "name": "Org Fair",
+    "location": "Kohl Center",
+    "start-time": "2026-02-10T16:00:00-06:00",
+    "end-time": "2026-02-10T20:00:00-06:00",
+    "description": "Stop by our booth at the org fair to learn more about the club!"
+  },
+  {
+    "id": "8",
+    "name": "General Body Meeting",
+    "location": "Middleton Building, Room 120",
+    "start-time": "2026-02-17T18:00:00-06:00",
+    "end-time": "2026-02-17T19:30:00-06:00",
+    "description": "First meeting of the spring semester! Come by to learn more about the club and get up to speed on upcoming events!"
+  },
+  {
+    "id": "9",
+    "name": "Movie Night - Rita Moreno: Just a Girl Who Decided to Go for It",
+    "location": "Middleton Building, Room 120",
+    "start-time": "2026-02-24T18:30:00-06:00",
+    "end-time": "2026-02-24T20:00:00-06:00",
+    "description": "Join us for a showing of the documentary, Rita Moreno: Just a Girl Who Decided to Go for It!"
+  }
+]
+
 // Categorize events into current / upcoming / past based on start/end
 function categorizeEvents(events) {
   const nowMs = Date.now();
@@ -179,7 +254,7 @@ export default function EventsList() {
         <h2 id="events-upcoming-heading">Upcoming Events</h2>
         {upcoming.length === 0 ? (
           <p className="text-muted">
-            No upcoming events yet,check back soon!
+            No upcoming events yet, check back soon!
           </p>
         ) : (
           <Row className="g-3">
