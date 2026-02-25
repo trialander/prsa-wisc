@@ -14,7 +14,9 @@ export default function Events() {
       </section>
 
       <EventsList />
-      <SuggestionBox />
+      {
+      // TODO: UNCOMMENT <SuggestionBox /> WHEN API IS FIGURED OUT?
+      }
     </div>
   );
 }
