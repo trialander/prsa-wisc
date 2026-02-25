@@ -1,10 +1,8 @@
-/* global CS571 */
-
 import { useState } from "react";
 import { Form, Button, Spinner } from "react-bootstrap";
 
 const CONTACT_URL =
-  "https://cs571api.cs.wisc.edu/rest/f25/bucket/p97contacts";
+  "TODO: UPDATE URL";
 
 export default function ContactForm() {
   const [fullName, setFullName] = useState("");

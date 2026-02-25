@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Card, Form, Button, Alert, Spinner } from "react-bootstrap";
+import { Card, Form, Button, Spinner } from "react-bootstrap";
 
 const SUGGESTIONS_URL =
-  "https://cs571api.cs.wisc.edu/rest/f25/bucket/p97suggestions";
+  "TODO: UPDATE URL";
 
 export default function SuggestionBox() {
   const [suggestion, setSuggestion] = useState("");
