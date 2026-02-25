@@ -13,7 +13,7 @@ import Donate from "./pages/Donate.jsx";
 
 function App() {
   return (
-    <Router basename="/p97/">
+    <Router basename="/prsa-wisc/">
       <header>
         <Banner/>
         <MyNavbar />
