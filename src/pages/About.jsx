@@ -39,13 +39,13 @@ const BOARD_MEMBERS = [
   },
   {
     id:3,
-    img: "yalmarie-.png", //TODO: INSERT YALMARIE'S LAST NAME
+    img: "yalmarie.png",
     name: "Yalmarie",
-    position: "",
+    position: "Secretary",
     major: "",
-    class: "",
-    home: "",
-    aboutme: ""
+    class: "Graduate",
+    home: "Carolina, PR",
+    aboutme: "My name is Yalmarie, and I serve as Secretary for PRSA. I am originally from Carolina, Puerto Rico, and I study and work in the Ob-Gyn Department researching female reproductive diseases such as ovarian cancer and preeclampsia. In my free time, I enjoy singing and watching movies."
   },
   {
     id:4,
