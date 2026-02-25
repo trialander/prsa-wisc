@@ -1,5 +1,3 @@
-/* global CS571 */
-
 import { useEffect, useState } from "react";
 import { Row, Col, Spinner, Alert } from "react-bootstrap";
 import GalleryImageCard from "./GalleryImageCard.jsx";

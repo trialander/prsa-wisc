@@ -1,5 +1,3 @@
-/* global CS571 */
-
 import { useEffect, useState } from "react";
 import { Row, Col, Spinner, Alert } from "react-bootstrap";
 import FutureEventCard from "./FutureEventCard.jsx";
@@ -83,6 +81,38 @@ const EVENTS = [
     "start-time": "2026-02-24T18:30:00-06:00",
     "end-time": "2026-02-24T20:00:00-06:00",
     "description": "Join us for a showing of the documentary, Rita Moreno: Just a Girl Who Decided to Go for It!"
+  },
+  {
+    "id": "10",
+    "name": "WBC Watch Party",
+    "location": "Nitty Gritty (223 N Frances Street)",
+    "start-time": "2026-03-06T16:30:00-06:00",
+    "end-time": "2026-03-06T19:00:00-06:00",
+    "description": "We will be watching the Puerto Rico's opening game at the World Baseball Classic. Come join us for some food, drinks, and baseball!"
+  },
+  {
+    "id": "11",
+    "name": "Just Dance Night",
+    "location": "Middleton Building, Room 120",
+    "start-time": "2026-02-24T18:30:00-06:00",
+    "end-time": "2026-02-24T20:00:00-06:00",
+    "description": ""
+  },
+  {
+    "id": "12",
+    "name": "Domino Event",
+    "location": "",
+    "start-time": "2026-02-24T18:30:00-06:00",
+    "end-time": "2026-02-24T20:00:00-06:00",
+    "description": ""
+  },
+  {
+    "id": "13",
+    "name": "PRSA 5K",
+    "location": "TBA",
+    "start-time": "2026-02-24T18:30:00-06:00",
+    "end-time": "2026-02-24T20:00:00-06:00",
+    "description": ""
   }
 ]
 

@@ -1,4 +1,3 @@
-/* global CS571 */
 import boardGroupPhoto from "../assets/board.png";
 import { useState } from "react";
 import { Row, Col } from "react-bootstrap";
